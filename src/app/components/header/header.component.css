@@ -4,6 +4,7 @@ div{
 }
 
 app-social{
-    float: right;
+    position: absolute;
+    text-align: right;
     margin-top: 25px;
 }
