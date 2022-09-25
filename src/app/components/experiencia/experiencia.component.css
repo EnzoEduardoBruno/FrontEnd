@@ -1,10 +1,92 @@
-.row{
-    padding: 20px;
+body{margin-top:20px;}
+.section {
+    padding: 100px 0;
+    position: relative;
 }
-div{
-    background-color: #1d2226;
-    color: white
+.gray-bg {
+    background-color: white;
 }
-h1, h3{
-    display: inline;
+
+/* Resume Box
+---------------------*/
+.resume-box {
+  background: white;
+  box-shadow: 0 0 1.25rem rgb(44, 62, 80);
+  border-radius: 10px;
+}
+.resume-box ul {
+  margin: 0;
+  padding: 30px 20px;
+  list-style: none;
+}
+.resume-box li {
+  position: relative;
+  padding: 0 20px 0 60px;
+  margin: 0 0 30px;
+}
+.resume-box li:last-child {
+  margin-bottom: 0;
+}
+.resume-box li:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border-left: 1px dashed #2c3e50;
+  bottom: 0;
+}
+.resume-box .icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #2c3e50;
+  line-height: 40px;
+  background: white;
+  text-align: center;
+  z-index: 1;
+  border: 1px dashed;
+  border-radius: 50%;
+}
+.resume-box .time {
+  background: #2c3e50;
+  color: white;
+  font-size: 10px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.resume-box h5 {
+
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.resume-box p {
+  margin: 0;
+}
+
+.resume-box li:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    border-left: 1px dashed #2c3e50;
+    bottom: 0;
+}
+.boton-azul{
+  height: 30px;
+  line-height: 10px;
+  color: white;
+  background-color: #2c3e50;
+}
+.boton-rojo{
+  height: 30px;
+  line-height: 10px;
+  color: white;
+  background-color: #c0344b;
 }

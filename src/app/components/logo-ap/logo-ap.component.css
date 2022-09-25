@@ -1,31 +1,58 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media (min-width: 576px){
+    #logoAP{
+    width: 60px;
+    }
 }
-.redes{
-    margin-right: 0.5em;
-}
-#logoAP{
-    width: 150px;
-}
-img{
-    width: 50px;
-}
-.btn{
-    border-width: medium;
-}
-/*--- Para la vista de celular ---*/
 @media (max-width: 575px){
-    .container{
-        flex-direction: column;
-    }
-    .redes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .redes img{
-        margin: 0.2em;
+    #logoAP{
+        width: 35px;
     }
 }
+@media (min-width: 576px){
+    #linkedin{
+    width: 50px;
+    }
+}
+@media (max-width: 575px){
+    #linkedin{
+        width: 35px;
+    }
+}
+@media (min-width: 576px){
+    #github{
+    width: 50px;
+    }
+}
+@media (max-width: 575px){
+    #github{
+        width: 35px;
+    }
+}
+@media (min-width: 576px){
+    #login{
+    width: 50px;
+    }
+}
+@media (max-width: 575px){
+    #login{
+        width: 35px;
+    }
+}
+@media (min-width: 576px){
+    #logout{
+    width: 50px;
+    }
+}
+@media (max-width: 575px){
+    #logout{
+        width: 35px;
+    }
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    }
+ .navbar .center{
+        align-items: center;
+ }   
