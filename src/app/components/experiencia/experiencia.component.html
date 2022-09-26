@@ -27,11 +27,13 @@
                             <div class="icon">
                                 <i class="fas fa-briefcase"></i>
                             </div>
-                            <span class="time">2019 - Present</span>
-                                    <td>
-                                        <h5>{{Experiencia.nombreE}}</h5>
-                                    </td>
-                                    <p>{{Experiencia.descripcionE}}</p>
+                                <td>
+                                <span class="time">{{Experiencia.timeE}}</span>
+                                    
+                                    <h5>{{Experiencia.nombreE}}</h5>
+                                    <h6>{{Experiencia.puestoE}}</h6>
+                                     <p>{{Experiencia.descripcionE}}</p>
+                                </td>
                         </li>
                     </ul>
                     <td *ngIf="isLogged">
