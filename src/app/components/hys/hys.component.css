@@ -1,0 +1,17 @@
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-azul{
+    height: 30px;
+    line-height: 10px;
+    color: white;
+    background-color: #2c3e50;
+  }
+  .boton-rojo{
+    height: 30px;
+    line-height: 10px;
+    color: white;
+    background-color: #c0344b;
+  }
