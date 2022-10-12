@@ -2,8 +2,11 @@
 <!-- Masthead-->
 <header class="masthead bg-primary text-white text-center">
   <div class="container d-flex align-items-center flex-column">
+    <button type="button" class="btn boton-azul" routerLink="/editacercade/1" *ngIf="isLogged">
+      <i class="bi bi-pencil-fill"></i>
+  </button>
     <!-- Masthead Avatar Image-->
-    <img class="img-fluid" src="../../../assets/perfilPhoto.png" alt="Foto de perfil" id="fotodeperfil" />
+    <img class="img-fluid" src={{persona.img}} alt="Foto de perfil" id="fotodeperfil" />
     <br>
     <!-- Masthead Heading-->
     <p class="masthead-heading text-uppercase mb-0" id="nombre">{{persona.nombre}} {{persona.apellido}}</p><br><br>
@@ -15,12 +18,7 @@
       <div class="divider-custom-line"></div>
     </div>
     <!-- Masthead Subheading-->
-    <h2 class="masthead-subheading font-weight-light mb-0">Full stack web developer</h2><br>
-    <h6>Mi nombre es Enzo tengo 28 años, vivo en Córdoba, Argentina. Actualmente estoy estudiando una tecnicatura en
-      programacion en Teclab, Realice un bootcamp de desarrollo web full stack en Argentina Programa y empece otro
-      bootcamp de desarrollo web en ONE - Oracle Next Education | Alura Latam. Me gusta aprender, sobre todo lo que esté
-      relacionado al desarrollo de software por lo que realice varios cursos, entre ellos de testing manual en la UTN -
-      FRBA tambien cursos de testing automatizado y programación en diversas plataformas. Estoy en búsqueda de mi primer
-      trabajo formal como tester de software, o desarrollador trainee.</h6>
+    <h2 class="masthead-subheading font-weight-light mb-0">{{persona.titulo}}</h2><br>
+    <p class="row">{{persona.descripcion}}</p>
   </div>
 </header>
