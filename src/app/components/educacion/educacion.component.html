@@ -4,7 +4,7 @@
                 <div class="container">
                         <section class="experiencia" id="experiencia">
                             <div class="container">
-                                <!-- Portfolio Section Heading-->
+                                <!-- Educacion Section Heading-->
                                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Educación</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
@@ -17,9 +17,9 @@
            <div class="resume-box">
             <div class="col-lg-12">
                 <button type="button" class="btn boton-azul" routerLink="/nuevaedu" *ngIf="isLogged">
-                   Agregar
+                    Agregar
                 </button>
-                <tbody class="hola">
+                <tbody>
                     <tr *ngFor="let Educacion of educacion">
                         <td>
                     <ul>
@@ -27,13 +27,13 @@
                             <div class="icon">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
-                            <td>
-                            <span class="time">{{Educacion.timeE}}</span>
+                                <td>
+                                <span class="time">{{Educacion.timeE}}</span>
                                     
                                     <h5>{{Educacion.nombreE}}</h5>
                                     <h6>{{Educacion.tituloE}}</h6>
                                     <p>{{Educacion.descripcionE}}</p>
-                                    </td>                                                                     
+                                </td>                                                                     
                         </li>
                     </ul>    
                     <td *ngIf="isLogged">
